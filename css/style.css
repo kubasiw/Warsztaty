@@ -1,0 +1,310 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*KOD */
+@font-face {
+font-family: "raleway-regular-webfont";
+src: url("../fonts/raleway-regular-webfont.woff") format("woff");
+}
+@font-face {
+	font-family: "raleway-bold-webfont";
+	src: url("../fonts/raleway-bold-webfont.woff") format("woff");
+}
+
+html {box-sizing: border-box;}
+body {font-family: "raleway-bold-webfont";}
+a {text-decoration: none;}
+
+.help_border {border: 1px solid violet;}
+.silver_border {border: 1px solid silver;}
+.turkusowy {color: #24baa0;}
+.white {color: white;}
+.whole_width {width: 100%;}
+.main_width {width: 1050px;}
+.srodek {margin: 0 auto;}
+.left {float: left;}
+.right {float: right;}
+.over {overflow: hidden;}
+.blok {display: block;}
+.regular {font-style: "raleway-regular-webfont";}
+
+/* HEADER POCZATEK */
+
+.naglowek {
+  height: 40px;
+  background-color: black;
+}
+
+.naglowek_row {
+  height: 40px;
+  background-color: black;
+  font-size: 0.9rem;
+}
+
+.sit_on_chair {
+  margin-top:15px;
+}
+
+.sit_on_chair p {
+  display: block;
+  float: left;
+  color: white;
+}
+
+.sit_on_chair span {
+  display: block;
+  float: left;
+  color: #24baa0;
+	font-weight: bolder;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.menu ul li {
+	float: right;
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+.menu > ul > li > a {
+  color: white;
+}
+/* KONIEC HEADER */
+
+.poziom_1 {
+  overflow: hidden;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,
+  rgba(254,254,254,1) 25%, rgba(226,226,226,1) 95%, rgba(226,226,226,1) 100%);
+}
+
+.poziom_1a {
+  height: 360px;
+  margin-top: 100px;
+}
+
+.box_glowny {
+  margin-top: 4px;
+  width: 930px;
+  height: 350px;
+}
+
+.nawias_lewy {
+  margin-top: 120px;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+
+.nawias_prawy {
+  margin-top: 120px;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+
+.fotel {
+  margin-top: 5px;
+  width: 330px;
+  height: 340px;
+  background-image: url("../images/black_chair.png");
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.sit {
+  margin-top: 5px;
+  width: 570px;
+  height: 340px;
+}
+
+.sit p {
+  display: block;
+  float: left;
+	margin-left: 10px;
+	margin-bottom: 40px;
+	font-family: "raleway-regular-webfont";
+	font-size: 2.5rem;
+}
+
+.sit p:first-child {
+	margin-left: 60px;
+}
+
+.sit span {
+  display: block;
+  float: left;
+	margin-left: 10px;
+	font-size: 2.5rem;
+  color: #24baa0;
+}
+
+.sit h5 {
+	display: inline-block;
+	margin-left: 60px;
+	font-family: "raleway-regular-webfont";
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+.sit h4 {
+	display: inline-block;
+	margin-left:10px;
+	font-family: "raleway-regular-webfont";
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+.sit h3 {
+	display: inline-block;
+	margin-left:130px;
+	font-family: "raleway-regular-webfont";
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px;
+	padding-left: 40px;
+	padding-right: 20px;
+	font-family: "raleway-regular-webfont";
+	font-size: 1.3rem;
+  margin-left: 130px;
+	margin-top: 20px;
+  border-radius: 6px 6px 6px 6px;
+  background-color: #24baa0;
+}
+
+.poziom_2a {
+	height: 320px;
+}
+
+.poziom_2b {
+	height: 270px;
+	margin-top: 25px;
+}
+
+.poziom_2c1 {
+	width: 329px;
+	height: 225px;
+	background-image: url("../images/box1_img.jpg");
+	background-repeat: no-repeat;
+}
+
+.poziom_2c2 {
+	width: 329px;
+	height: 225px;
+	margin-left: 30px;
+	background-image: url("../images/box2_img.jpg");
+}
+
+.poziom_2c3 {
+	width: 329px;
+	height: 250px;
+}
+
+.transparent_1 {
+	width: 329px;
+	height: 60px;
+	margin-top: 150px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.transparent_2 {
+	width: 329px;
+	height: 60px;
+	margin-top: 150px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.row_1, .row_2 {
+	width: 140px;
+	height: 18px;
+	margin-top: 12px;
+	margin-left: 10px;
+	border-bottom: 7px solid #24baa0;
+}
+
+.row_3 {
+	width: 140px;
+	height: 18px;
+	margin-top: 30px;
+	margin-left: 20px;
+	border-bottom: 7px solid #24baa0;
+}
+
+.poziom_2c3 h1 {
+	margin-top: 70px;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 20px;
+	font-family: "raleway-regular-webfont";
+	font-size: 0.95rem;
+}
+
+.cennik {
+	height: 900px;
+	background-color: #f1f1f1;
+}
+
+.cennik_main {
+	height: 800px;
+	margin-top: 25px;
+}
+
+.row_4 {
+	width: 329px;
+	height: 30px;
+	margin-top: 30px;
+	font-size: 1.4rem;
+	font-family: "raleway-regular-webfont";
+	border-bottom: 7px solid #24baa0;
+	font-weight: 800;
+}
+
+.badges {
+	height: 750px;
+	margin-top: 100px;
+}
