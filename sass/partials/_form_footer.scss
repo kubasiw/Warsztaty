@@ -1,0 +1,58 @@
+.sec4 {
+    overflow: hidden;
+    height: 654px;
+}
+
+.kontakt {
+    @extend %cennik_kontakt;
+    margin-bottom: 46px;
+}
+
+.input_box_l {
+    position: relative;
+    width: 633px;
+    height: 400px;
+}
+
+input {
+    width: 633px;
+    height: 66px;
+    border: 1px solid #a3e2d7;
+    margin-bottom: 26px;
+}
+
+input[type="textarea"] {
+    height: 189px;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Raleway';
+    font-size: 33px;
+    font-weight: 100;
+}
+
+:-moz-placeholder { /* older Firefox*/
+    font-size: 33px;
+    font-weight: 100;
+}
+
+::-moz-placeholder { /* Firefox 19+ */ 
+    font-size: 33px;
+    font-weight: 100;
+} 
+
+:-ms-input-placeholder { 
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.input_box_r {
+    width: 359px;
+    height: 400px;
+}
+
+.red_chair {
+    width: 264px;
+    height: 210px;
+    background-image: url('../images/red_chair.png');
+}

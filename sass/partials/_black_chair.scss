@@ -1,0 +1,67 @@
+.sec1 {
+    overflow: hidden;
+    height: 505px;
+    min-width: 1050px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 47%, rgba(201,204,211,1) 100%);
+    .sec1_box {
+        height: 337px;
+        margin-top: 127px;
+    }
+}
+
+.black_chair {
+    width: 470px;
+    height: 337px;
+    background: url('../images/black_chair.png');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: center;
+}
+
+.text_sit {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.sit_chair {
+    width: 430px;
+    height: 337px;
+    overflow: hidden;
+    font-size: 40px;
+    h1 {
+        float: left;
+    }
+    h2 {
+        float: left;
+        font-weight: bold;
+        color: #27c7ab;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+}
+
+.text_chair {
+    display: block;
+    margin-top: 30px;
+     p {
+        font-size: 14px;
+        margin-top: 90px;
+        line-height: 25px;
+         text-align: center;
+    }
+}
+
+.button {
+    margin-top: 50px;
+    margin-left: 80px;
+    a {
+        font-size: 24px;
+        text-decoration: none;
+        padding: 10px;
+        padding-left: 45px;
+        padding-right: 34px;
+        background-color: #27c7ab;
+        color: white;
+        border-radius: 6px 6px 6px 6px;
+    }
+}

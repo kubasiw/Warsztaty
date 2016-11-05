@@ -1,0 +1,107 @@
+.sec3 {
+    overflow: hidden;
+    height: 725px;
+    min-width: 1050px;
+    background-color: #f1f1f1;
+}
+
+.cennik {
+    @extend %cennik_kontakt;
+}
+
+.badgesBox {
+    height: 543px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.badge1 {
+    @extend %badge;
+}
+
+.badge2 {
+    @extend %badge;
+}
+
+.badge3 {
+    @extend %badge;
+}
+
+.circle_out {
+    @extend %circleOut;
+}
+
+.circle_in {
+    @extend %circleIn
+}
+
+.badge_name {
+    @extend %badgeName;
+}
+
+.circle_price {
+    @extend %circlePrice;
+    h1 {
+        font-size: 45px;
+        float: left;
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.priceRow1 {
+    display: flex;
+    justify-content: center;
+}
+
+.priceRow2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.zak_dow {
+    @extend %badgeOffertDark;
+    border-top:2px solid white;
+    margin-top: 35px;
+}
+
+.serwis {
+    @extend %badgeOffertLight;
+}
+
+.gwarancja {
+    @extend %badgeOffertDark;
+}
+
+.porady {
+    @extend %badgeOffertLight;
+}
+
+
+.dolacz {
+    margin-left: 100px;
+    display: flex;
+    vertical-align: bottom;
+    a {
+        @extend %join;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.dol1 {
+    margin-top: 110px;
+}
+
+.dol2 {
+    margin-top: 67px;
+}
+
+.dol3 {
+    margin-top: 24px;
+}
