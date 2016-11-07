@@ -79,8 +79,8 @@ header {
     color: white; }
   .row_header span {
     font-weight: bold;
-    margin-left: 15px;
-    margin-right: 15px; }
+    margin-left: 5px;
+    margin-right: 5px; }
 
 .logo_header {
   margin-top: 15px; }
