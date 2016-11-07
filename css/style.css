@@ -219,6 +219,10 @@ nav {
 .kontakt {
   margin-bottom: 46px; }
 
+form {
+  display: flex;
+  justify-content: space-between; }
+
 .input_box_l {
   position: relative;
   width: 633px;
@@ -227,6 +231,8 @@ nav {
 input {
   width: 633px;
   height: 66px;
+  font-family: 'Raleway';
+  font-size: 33px;
   border: 1px solid #a3e2d7;
   margin-bottom: 26px; }
 
@@ -240,15 +246,18 @@ input[type="textarea"] {
 
 :-moz-placeholder {
   /* older Firefox*/
+  font-family: 'Raleway';
   font-size: 33px;
   font-weight: 100; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
+  font-family: 'Raleway';
   font-size: 33px;
   font-weight: 100; }
 
 :-ms-input-placeholder {
+  font-family: 'Raleway';
   font-size: 33px;
   font-weight: 100; }
 
@@ -259,7 +268,76 @@ input[type="textarea"] {
 .red_chair {
   width: 264px;
   height: 210px;
-  background-image: url("../images/red_chair.png"); }
+  margin-left: 10px;
+  margin-top: -22px;
+  background-image: url("../images/red_chair.png");
+  background-position: top; }
+
+.checkbox_box {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; }
+  .checkbox_box input {
+    float: left; }
+  .checkbox_box p {
+    float: left;
+    margin-top: 16px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #cacaca; }
+
+input[type="checkbox"] {
+  width: 48px;
+  color: 27c7ab; }
+
+.send {
+  display: flex;
+  justify-content: center;
+  background-color: #24baa0;
+  font-size: 34px;
+  font-weight: bold;
+  border-radius: 7px 7px 7px 7px; }
+  .send a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-left: 115px;
+    padding-right: 115px; }
+
+/* FOOTER css */
+footer {
+  position: relative;
+  top: 55px;
+  display: flex;
+  justify-content: space-between;
+  color: #9b9b9b; }
+
+.footer_left {
+  width: 633px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5mm; }
+  .footer_left p {
+    margin-top: 15px; }
+
+.footer_right {
+  width: 359px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px; }
+  .footer_right p {
+    margin-top: 15px;
+    font-weight: 500; }
+  .footer_right span {
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .footer_right a {
+    text-decoration: none;
+    color: #9b9b9b; }
 
 .clair, .marg {
   width: 334px;
