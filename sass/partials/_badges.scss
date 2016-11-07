@@ -18,15 +18,7 @@
     
 }
 
-.badge1 {
-    @extend %badge;
-}
-
-.badge2 {
-    @extend %badge;
-}
-
-.badge3 {
+.badge {
     @extend %badge;
 }
 
@@ -104,4 +96,44 @@
 
 .dol3 {
     margin-top: 24px;
+}
+
+
+
+
+.badge:hover {
+    background-color: #27c7ab;
+    border: 2px solid #27c7ab;
+    .circle_out {
+        background-color: #27c7ab;
+        border: #27c7ab;
+    }
+    .circle_in {
+        background-color: #f9f9f9;
+    }
+    .badge_name {
+        color: white;
+    }
+    .circle_price {
+        background-color: #f9f9f9;
+        border: #f9f9f9;
+        color: #27c7ab;
+    }
+    .zak_dow {
+        background-color: white;
+    }
+    .serwis {
+        background-color: #f1f1f1;
+    }
+    .gwarancja {
+        background-color: white;
+    }
+    .porady {
+        background-color: #f1f1f1;
+    }
+    a {
+        background-color: white;
+        color: #27c7ab;
+        font-weight: 500;
+    }
 }

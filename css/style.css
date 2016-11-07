@@ -212,6 +212,33 @@ nav {
 .dol3 {
   margin-top: 24px; }
 
+.badge:hover {
+  background-color: #27c7ab;
+  border: 2px solid #27c7ab; }
+  .badge:hover .circle_out {
+    background-color: #27c7ab;
+    border: #27c7ab; }
+  .badge:hover .circle_in {
+    background-color: #f9f9f9; }
+  .badge:hover .badge_name {
+    color: white; }
+  .badge:hover .circle_price {
+    background-color: #f9f9f9;
+    border: #f9f9f9;
+    color: #27c7ab; }
+  .badge:hover .zak_dow {
+    background-color: white; }
+  .badge:hover .serwis {
+    background-color: #f1f1f1; }
+  .badge:hover .gwarancja {
+    background-color: white; }
+  .badge:hover .porady {
+    background-color: #f1f1f1; }
+  .badge:hover a {
+    background-color: white;
+    color: #27c7ab;
+    font-weight: 500; }
+
 .sec4 {
   overflow: hidden;
   height: 654px; }
@@ -380,7 +407,7 @@ footer {
   color: #575757;
   border-bottom: 7px solid #27c7ab; }
 
-.badge1, .badge2, .badge3 {
+.badge {
   float: left;
   width: 326px;
   height: 497px;
