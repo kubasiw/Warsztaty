@@ -1,4 +1,5 @@
 .application {
+    min-width: 1050px;
     overflow: hidden;
     height: 430px;
     background-color: #f9f9f9;
@@ -199,7 +200,7 @@
 .list_panel {
     background-color: white;
     border: 1px solid #ccc;
-    width: 288px;
+    width: 318px;
     padding-left: 15px;
     padding-bottom: 10px;
     list-style: none;
@@ -207,7 +208,7 @@
     left: 0px;
     z-index: 2;
     position: absolute;
-    top: 54px;
+    top: 40px;
     display:none;
 }
 
