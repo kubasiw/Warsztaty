@@ -91,8 +91,33 @@ nav {
     color: #27c7ab; }
 
 .li2 {
-  margin-left: 53px;
+  margin-left: 18px;
   margin-right: 39px; }
+
+.js_menu {
+  position: absolute;
+  display: none;
+  width: 120px;
+  height: 96px;
+  margin-top: 20px;
+  margin-left: -15px;
+  background-color: black;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-left: 10px; }
+  .js_menu li {
+    margin-bottom: 10px; }
+
+.triangle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 38px;
+  top: -5px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: black; }
 
 .sec1 {
   overflow: hidden;
@@ -150,6 +175,12 @@ nav {
     background-color: #27c7ab;
     color: white;
     border-radius: 6px 6px 6px 6px; }
+
+.arrow_l, .arrow_r {
+  font-size: 78px;
+  font-weight: 200;
+  margin-top: 110px;
+  color: #24baa0; }
 
 .sec2 {
   overflow: hidden;
