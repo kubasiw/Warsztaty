@@ -9,14 +9,33 @@
     }
 }
 
+/* SLIDER */
 .black_chair {
-    width: 470px;
-    height: 337px;
-    background: url('../images/black_chair.png');
-    background-repeat: no-repeat;
-    background-size: 600px;
-    background-position: center;
+    position:relative;
+    width:470px;
+    height:337px;
+    display: block;
+    overflow: hidden;
 }
+
+.black_chair ul{
+    position:absolute;
+    left:0;
+    list-style: none;
+    transition: left 1s;
+}
+
+.black_chair ul li{
+    display:block;
+    float:left;
+    transition: opacity 1s;
+    opacity:0;
+}
+
+.black_chair ul li.visible{
+    opacity:1;   
+}
+/* SLIDER END */
 
 .text_sit {
     margin-left: 30px;
