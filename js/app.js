@@ -241,6 +241,9 @@ transport.addEventListener('change', function(){
     } else {
         selectedTransport.innerText = "";
         selectedTransportPrice.innerText = "";
+        price_transport = "";
+        price = price_model + price_color + price_pattern + price_transport;
+        sum.innerText = price;
     }
 });
     
