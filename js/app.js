@@ -120,6 +120,8 @@ var fabric = document.querySelector('.fabric');
 var leather = document.querySelector('.leather');
 // transport
 var transport = document.querySelector('input[type=checkbox]');
+    
+    
 // elementy wybrane
 var selectedModel = document.querySelector('.title');
 var selectedColor = document.querySelector('.color');
@@ -133,6 +135,14 @@ var selectedTransportPrice = document.querySelector('.transport2');
 // suma
 var sum = document.querySelector('.sum');
 
+var price = price_model + price_color + price_pattern + price_transport;
+
+var price_model = 0;
+var price_color =0;
+var price_pattern = 0;
+var price_transport =0;
+    
+    
 // ustawione czuwanie na klikniecie trojkata i naprzemienne ustawianie display(none / block)
 listArrow1.addEventListener('click', function(chooseType){
     listPanel1.style.display = ((listPanel1.style.display!='none') ? 'none' : 'block');
@@ -148,50 +158,90 @@ listArrow3.addEventListener('click', function(chooseType){
 // wybór modelu i wpisanie go po prawo wraz z cena
 clair.addEventListener('click', function(model){
     selectedModel.innerText = "Clair";
-    selectedModelPrice.innerText = "549";
+    selectedModelPrice.innerText = 549;
+    listPanel1.style.display = "none";
+    price_model = 549;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
     
 margarita.addEventListener('click', function(model){
     selectedModel.innerText = "Margarita";
-    selectedModelPrice.innerText = "649";
+    selectedModelPrice.innerText = 649;
+    listPanel1.style.display = "none";
+    price_model = 649;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
     
 selena.addEventListener('click', function(model){
     selectedModel.innerText = "Selena";
-    selectedModelPrice.innerText = "719";
+    selectedModelPrice.innerText = 719;
+    listPanel1.style.display = "none";
+    price_model = 719;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
 // wybor koloru
 red.addEventListener('click', function(color){
     selectedColor.innerText = "czerwony";
-    selectedColorPrice.innerText = "0";
+    selectedColorPrice.innerText = 99;
+    listPanel2.style.display = "none";
+    price_color = 99;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
     
 black.addEventListener('click', function(color){
     selectedColor.innerText = "czarny";
-    selectedColorPrice.innerText = "0";
+    selectedColorPrice.innerText = 19;
+    listPanel2.style.display = "none";
+    price_color = 19;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
 
 orange.addEventListener('click', function(color){
     selectedColor.innerText = "pomarańczowy";
-    selectedColorPrice.innerText = "0";
+    selectedColorPrice.innerText = 19;
+    listPanel2.style.display = "none";
+    price_color = 19;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
 
 // wybor materialu
 fabric.addEventListener('click', function(material){
     selectedFabric.innerText = "tkanina";
-    selectedFabricPrice.innerText = "0";
+    selectedFabricPrice.innerText = 99;
+    listPanel3.style.display = "none";
+    price_pattern = 99;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
     
 leather.addEventListener('click', function(material){
     selectedFabric.innerText = "skóra";
-    selectedFabricPrice.innerText = "299";
+    selectedFabricPrice.innerText = 299;
+    listPanel3.style.display = "none";
+    price_pattern = 299;
+    price = price_model + price_color + price_pattern + price_transport;
+    sum.innerText = price;
 });
 
-//transport PRACUJEMY NAD TYM
-transport.addEventListener('checked', function(transport){
-        selectedTransport.innerText = "Transport";
-        selectedTransportPrice.innerText = "50";
-    
+//transport
+
+transport.addEventListener('change', function(){
+    if (transport.checked == true) {
+        selectedTransport.innerText = "transport";
+        selectedTransportPrice.innerText = 50;
+        price_transport = 50;
+        price = price_model + price_color + price_pattern + price_transport;
+        sum.innerText = price;
+    } else {
+        selectedTransport.innerText = "";
+        selectedTransportPrice.innerText = "";
+    }
 });
     
     
