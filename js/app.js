@@ -13,7 +13,7 @@ var transparent2 = document.querySelectorAll('.transparent')[1];
 //console.log(transparent2);
     
 clair.addEventListener('mouseover', function(hide){
-    transparent1.style.visibility = "hidden"; 
+    transparent1.style.visibility = "hidden";
 });
 
 clair.addEventListener('mouseout', function(show){
@@ -21,7 +21,7 @@ clair.addEventListener('mouseout', function(show){
 });
     
 marg.addEventListener('mouseover', function(hide){
-    transparent2.style.visibility = "hidden"; 
+    transparent2.style.visibility = "hidden";
 });
 
 marg.addEventListener('mouseout', function(show){
@@ -145,16 +145,17 @@ var price_transport =0;
     
 // ustawione czuwanie na klikniecie trojkata i naprzemienne ustawianie display(none / block)
 listArrow1.addEventListener('click', function(chooseType){
-    listPanel1.style.display = ((listPanel1.style.display!='none') ? 'none' : 'block');
+     listPanel1.style.display = ((listPanel1.style.display!='none' && listPanel1.style.display) ? 'none' : 'block');
 });
 
 listArrow2.addEventListener('click', function(chooseType){
-    listPanel2.style.display = ((listPanel2.style.display!='none') ? 'none' : 'block');
+    listPanel2.style.display = ((listPanel2.style.display!='none' && listPanel2.style.display) ? 'none' : 'block');
 });
     
 listArrow3.addEventListener('click', function(chooseType){
-    listPanel3.style.display = ((listPanel3.style.display!='none') ? 'none' : 'block');
+    listPanel3.style.display = ((listPanel3.style.display!='none' && listPanel3.style.display) ? 'none' : 'block');
 });
+    
 // wybór modelu i wpisanie go po prawo wraz z cena
 clair.addEventListener('click', function(model){
     selectedModel.innerText = "Clair";
