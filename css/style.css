@@ -113,15 +113,16 @@ nav {
     margin-bottom: 10px; }
 
 .triangle {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  margin-left: 38px;
-  top: -5px;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: black; }
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-bottom: 9px solid black;
+    border-left: 13px solid rgba(255, 255, 255, 0);
+    border-right: 13px solid rgba(255, 255, 255, 0);
+    margin-left: 38px;
+    margin-right: 18px;
+    top: -26px;
+}
 
 .sec1 {
   overflow: hidden;
